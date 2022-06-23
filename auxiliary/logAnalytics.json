@@ -34,8 +34,7 @@
         "workspaceRegion": "[deployment().location]",
         "automationAccountName": "[concat('auto-platform-prod-',deployment().location,'-001')]",
         "automationRegion": "[deployment().location]",
-        "rgName": "[concat(parameters('topLevelManagementGroupPrefix'), '-mgmt')]",
-        "rgName": "[concat('rg-platformmgmt-prod-', deployment().location ]",
+        "rgName": "[concat('rg-platformmgmt-prod-', deployment().location )]",
         "resourceDeploymentName": "[take(concat('EntScale-mgmt', deployment().name), 64)]"
     },
     "resources": [
